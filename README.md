@@ -45,6 +45,7 @@ The bids asset has a unique ID for all bids, it keeps the bid value and the Clie
  ```
  Create chaincode and client aplication directories (just the first time)
  ```
+ cd ~/nmiblocknet
  mkdir auction
  mkdir auction-cli
  cp fabpki-cli/inmetro.br.json auction-cli
