@@ -41,7 +41,7 @@ The bids asset has a unique ID for all bids, it keeps the bid value and the Clie
  Create the channel and join the peers
  
  ``` 
- ./configchannel.sh ptb.de -c
+ ./configchannel.sh inmetro.br -c
  ```
  Create chaincode and client aplication directories (just the first time)
  ```
