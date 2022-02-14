@@ -31,7 +31,7 @@ The bids asset has a unique ID for all bids, it keeps the bid value and the Clie
  git clone https://github.com/wsmelojr/nmiblocknet
  cd nmiblocknet
  ```
- Follow their tutorial on how to set up and working with their network in: https://github.com/wsmelojr/nmiblocknet.
+ Follow their tutorial on how to set up and work with their network in: https://github.com/wsmelojr/nmiblocknet.
  
  # Usage
  In order to start working with the auction project we need to start up the blockchain network:
