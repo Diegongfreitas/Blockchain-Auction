@@ -48,10 +48,11 @@ The bids asset has a unique ID for all bids, it keeps the bid value and the Clie
  cd ~/nmiblocknet
  mkdir auction
  mkdir auction-cli
- cp fabpki-cli/inmetro.br.json auction-cli
- cp ~/Blockchain-Auction/auction.go auction
- cp ~/Blockchain-Auction/auctionner.py auction-cli
- cp ~/Blockchain-Auction/bid_register.py auction-cli
+ mv fabpki-cli/inmetro.br.json auction-cli
+ mv ~/Blockchain-Auction/auction.go auction
+ mv ~/Blockchain-Auction/auctionner.py auction-cli
+ mv ~/Blockchain-Auction/bid_register.py auction-cli
+ rm -rf ~/Blockchain-Auction
 
  ```
  Install and Instantiate auction chaincode
