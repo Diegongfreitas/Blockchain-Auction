@@ -66,7 +66,7 @@ The bids asset has a unique ID for all bids, it keeps the bid value and the Clie
  python3 auctionner.py <license plate> <start value(int)>
  ```
  
- Call out the bids:
+ Open another terminal to call out the bids:
  
  ```
  python3 bid_register.py <license plate> <bid value(int)> <participant SSN>
