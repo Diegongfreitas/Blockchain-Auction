@@ -73,3 +73,8 @@ The bids asset has a unique ID for all bids, it keeps the bid value and the Clie
  ```
  python3 bid_register.py <license plate> <bid value(int)> <participant SSN>
  ```
+ Using CouchDB
+ ```
+ docker ps | grep couchdb
+ ```
+ You can check the local copy of the ledger register in http://localhost:7984/_utils
