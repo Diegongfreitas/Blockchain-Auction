@@ -1,5 +1,5 @@
 # Blockchain-Auction
-A project of a car Auction using blockchain network
+A simulation project of a car auction using blockchain network
 
 Coordination:
  Wilson S. Melo Jr. (wsjunior@inmetro.gov.br)
@@ -25,14 +25,14 @@ The bids asset has a unique ID for all bids, it keeps the bid value and the Clie
 
  # Requirements
  
- First of all, this project uses the Inter-NMI experiment Blokchain Network, so, you should start by reading and getting familiarized with their work. 
+ First of all, this project uses the Inter-NMI experiment Blockchain Network, so, you should start by reading and getting familiarized with their work. 
  ```
  cd ~
  git clone https://github.com/wsmelojr/nmiblocknet
  cd nmiblocknet
  ```
  Follow their tutorial on how to set up and work with their network in: https://github.com/wsmelojr/nmiblocknet.
- 
+
  # Usage
  In order to start working with the auction project we need to start up the blockchain network:
  ```
@@ -43,18 +43,23 @@ The bids asset has a unique ID for all bids, it keeps the bid value and the Clie
  ``` 
  ./configchannel.sh inmetro.br -c
  ```
- Create chaincode and client aplication directories (just the first time)
+ Create chaincode and client aplication directories (just for the first time)
  ```
  cd ~/nmiblocknet
  mkdir auction
  mkdir auction-cli
- mv fabpki-cli/inmetro.br.json auction-cli
+ cp fabpki-cli/inmetro.br.json auction-cli
  mv ~/Blockchain-Auction/auction.go auction
  mv ~/Blockchain-Auction/auctionner.py auction-cli
  mv ~/Blockchain-Auction/bid_register.py auction-cli
  rm -rf ~/Blockchain-Auction
-
+ 
  ```
+ The inmetro.br.json file, now in auction-cli directory, is a copy of the nmiblocknet file with
+exact same name in their fabpki project. In order to make it work in the auction project it should
+receive the exact same changes described in nmiblocknet repository, if you copied the file without
+making the necessary changes, do it now, otherwise it won't work.
+
  Install and Instantiate auction chaincode
  ```
  ./configchaincode.sh install cli0 auction 1.0
